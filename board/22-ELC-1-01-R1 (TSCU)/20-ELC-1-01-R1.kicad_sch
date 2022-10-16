@@ -2591,12 +2591,6 @@
     (path "/00000000-0000-0000-0000-000060f320ba/00000000-0000-0000-0000-0000600c19ca"
       (reference "#PWR047") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00005d90d733/f8a2fe8a-8f19-45d3-a2b0-895dc790ca64"
-      (reference "#PWR048") (unit 1) (value "+5V") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00005d90d733/f84bbd3c-27a0-4b7b-b627-325cfe96df3a"
-      (reference "#PWR049") (unit 1) (value "GND") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-000060f320ba/00000000-0000-0000-0000-00006011fbc0"
       (reference "#PWR050") (unit 1) (value "+5V") (footprint "")
     )
@@ -2605,9 +2599,6 @@
     )
     (path "/00000000-0000-0000-0000-000060f320ba/00000000-0000-0000-0000-000060120a95"
       (reference "#PWR052") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00005d90d733/2bc7822d-2d47-4d65-984f-cfb82b94b112"
-      (reference "#PWR053") (unit 1) (value "+5V") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000060f320ba/00000000-0000-0000-0000-00006065c16a"
       (reference "#PWR054") (unit 1) (value "+5V") (footprint "")
@@ -2696,9 +2687,6 @@
     (path "/00000000-0000-0000-0000-000060f65a9c/00000000-0000-0000-0000-0000618d0d63"
       (reference "#PWR082") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00005d90d733/62e5ff89-3db5-4a8e-b43e-d8243404752a"
-      (reference "#PWR083") (unit 1) (value "GND") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-000060f65a9c/00000000-0000-0000-0000-000060335b5e"
       (reference "#PWR084") (unit 1) (value "+5V") (footprint "")
     )
@@ -2722,6 +2710,9 @@
     )
     (path "/00000000-0000-0000-0000-000060f77f4b/00000000-0000-0000-0000-0000618d09b4"
       (reference "#PWR091") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005d90d733/c3ac267f-3594-4c1d-9aa2-ad3e8ca9a18c"
+      (reference "#PWR092") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000060f77f4b/00000000-0000-0000-0000-00006012df54"
       (reference "#PWR093") (unit 1) (value "GND") (footprint "")
@@ -2815,9 +2806,6 @@
     )
     (path "/00000000-0000-0000-0000-000060f65a9c/00000000-0000-0000-0000-00006019451e"
       (reference "C19") (unit 1) (value "1nf") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
-    )
-    (path "/00000000-0000-0000-0000-00005d90d733/d933c8cf-dcda-4739-90cf-4a62dbc503cf"
-      (reference "C20") (unit 1) (value "100u") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000060f65a9c/00000000-0000-0000-0000-0000601a18ab"
       (reference "C21") (unit 1) (value "0.1uf") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
@@ -3104,9 +3092,6 @@
     (path "/00000000-0000-0000-0000-000060f320ba/00000000-0000-0000-0000-0000618f357a"
       (reference "R44") (unit 1) (value "500") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00005d90d733/501f58fe-fd26-4478-a110-df98b58d9540"
-      (reference "R45") (unit 1) (value "30k") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-000060f77f4b/00000000-0000-0000-0000-00006021b09f"
       (reference "R46") (unit 1) (value "100") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
     )
@@ -3127,6 +3112,9 @@
     )
     (path "/00000000-0000-0000-0000-000060f320ba/00000000-0000-0000-0000-0000600d193f"
       (reference "RV1") (unit 1) (value "R_POT_TRIM") (footprint "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical")
+    )
+    (path "/00000000-0000-0000-0000-00005d90d733/4a1327d8-1c59-4941-8cb7-ca73a1d291e5"
+      (reference "SW1") (unit 1) (value "FAULT_RESET") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00005d90d733/00000000-0000-0000-0000-000061024c3d"
       (reference "TP1") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm")
@@ -3223,12 +3211,6 @@
     )
     (path "/00000000-0000-0000-0000-000060f65a9c/00000000-0000-0000-0000-00006008dff1"
       (reference "U10") (unit 1) (value "RFMM-0505S") (footprint "LHRE Footprint Library:RFMM-0505S")
-    )
-    (path "/00000000-0000-0000-0000-00005d90d733/e6cd28e5-fa39-4968-8785-62b7d2f12352"
-      (reference "U11") (unit 1) (value "SN74LVC1G14DBV") (footprint "Package_TO_SOT_SMD:SOT-23-5")
-    )
-    (path "/00000000-0000-0000-0000-00005d90d733/e68a6d84-bc53-4641-8cd0-b0620e120b7b"
-      (reference "U12") (unit 1) (value "74LS32") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000060f65a9c/00000000-0000-0000-0000-0000600df018"
       (reference "U13") (unit 1) (value "ACPL-C79B") (footprint "Package_SO:SSO-8_6.8x5.9mm_P1.27mm_Clearance8mm")

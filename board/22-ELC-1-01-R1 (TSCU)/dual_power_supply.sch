@@ -1,0 +1,337 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 11 12
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Switching:TPS5430DDA U1
+U 1 1 60F3AE0D
+P 4900 5150
+F 0 "U1" H 4900 5617 50  0000 C CNN
+F 1 "TPS5430DDA" H 4900 5526 50  0000 C CNN
+F 2 "Package_SO:TI_SO-PowerPAD-8_ThermalVias" H 4950 4800 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tps5430.pdf" H 4900 5150 50  0001 C CNN
+F 4 "Texas Instruments" H 4900 5150 50  0001 C CNN "Manufacturer"
+F 5 "TPS5430DDAR" H 4900 5150 50  0001 C CNN "Part Number"
+F 6 "TPS543x 3-A, Wide Input Range, Step-Down Converter" H 4900 5150 50  0001 C CNN "Description"
+F 7 "SOIC" H 4900 5150 50  0001 C CNN "Package"
+	1    4900 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR020
+U 1 1 60F3CC43
+P 4850 5700
+F 0 "#PWR020" H 4850 5450 50  0001 C CNN
+F 1 "GND" H 4855 5527 50  0000 C CNN
+F 2 "" H 4850 5700 50  0001 C CNN
+F 3 "" H 4850 5700 50  0001 C CNN
+	1    4850 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 5550 4800 5700
+Wire Wire Line
+	4800 5700 4850 5700
+Wire Wire Line
+	4900 5550 4900 5700
+Wire Wire Line
+	4900 5700 4850 5700
+Connection ~ 4850 5700
+$Comp
+L Device:C_Small C5
+U 1 1 60F41901
+P 5650 4950
+F 0 "C5" V 5850 5000 50  0000 R CNN
+F 1 "10nF" V 5750 5050 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5650 4950 50  0001 C CNN
+F 3 "~" H 5650 4950 50  0001 C CNN
+F 4 "" H 5650 4950 50  0001 C CNN "LCSC part number"
+	1    5650 4950
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5400 4950 5550 4950
+Wire Wire Line
+	5750 4950 5850 4950
+Wire Wire Line
+	5850 4950 5850 5150
+Wire Wire Line
+	5850 5150 5400 5150
+$Comp
+L Device:D_Schottky D6
+U 1 1 60F49711
+P 6150 5100
+F 0 "D6" V 6104 5179 50  0000 L CNN
+F 1 "SS34" V 6195 5179 50  0000 L CNN
+F 2 "Diode_SMD:D_SMA" H 6150 5100 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/2105061435_MDD-Microdiode-Electronics--SS34_C8678.pdf" H 6150 5100 50  0001 C CNN
+F 4 "SS34" H 6150 5100 50  0001 C CNN "Part Number"
+F 5 "Schottky Rectifier" H 6150 5100 50  0001 C CNN "Description"
+	1    6150 5100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5850 4950 6150 4950
+Connection ~ 5850 4950
+$Comp
+L Device:L_Core_Iron_Small L?
+U 1 1 60F4CA98
+P 6600 4950
+AR Path="/60F4CA98" Ref="L?"  Part="1" 
+AR Path="/5D9AE4F9/60F4CA98" Ref="L1"  Part="1" 
+F 0 "L1" V 6805 4950 50  0000 C CNN
+F 1 "15uH (4.5A)" V 6714 4950 50  0000 C CNN
+F 2 "Inductor_SMD:L_Abracon_ASPI-0630LR" H 6600 4950 50  0001 C CNN
+F 3 "https://product.tdk.com/en/system/files?file=dam/doc/product/inductor/inductor/smd/catalog/inductor_automotive_power_spm7054vt-d_en.pdf" H 6600 4950 50  0001 C CNN
+F 4 "Inductors for power circuits" H 6600 4950 50  0001 C CNN "Description"
+F 5 "TDK" H 6600 4950 50  0001 C CNN "Manufacturer"
+F 6 "SPM7054VT-150M-D" H 6600 4950 50  0001 C CNN "Part Number"
+	1    6600 4950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR021
+U 1 1 60F513FB
+P 6150 5250
+F 0 "#PWR021" H 6150 5000 50  0001 C CNN
+F 1 "GND" H 6155 5077 50  0000 C CNN
+F 2 "" H 6150 5250 50  0001 C CNN
+F 3 "" H 6150 5250 50  0001 C CNN
+	1    6150 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR022
+U 1 1 60F52122
+P 7200 5150
+F 0 "#PWR022" H 7200 4900 50  0001 C CNN
+F 1 "GND" H 7205 4977 50  0000 C CNN
+F 2 "" H 7200 5150 50  0001 C CNN
+F 3 "" H 7200 5150 50  0001 C CNN
+	1    7200 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 4950 6500 4950
+Connection ~ 6150 4950
+$Comp
+L Device:R R4
+U 1 1 60F536BE
+P 8400 5250
+F 0 "R4" H 8470 5296 50  0000 L CNN
+F 1 "10k" H 8470 5205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 8330 5250 50  0001 C CNN
+F 3 "~" H 8400 5250 50  0001 C CNN
+	1    8400 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 5350 5400 5550
+$Comp
+L Device:R R5
+U 1 1 60F564D9
+P 8400 5850
+F 0 "R5" H 8470 5896 50  0000 L CNN
+F 1 "3.24k" H 8470 5805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 8330 5850 50  0001 C CNN
+F 3 "~" H 8400 5850 50  0001 C CNN
+	1    8400 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR025
+U 1 1 60F57709
+P 8400 6000
+F 0 "#PWR025" H 8400 5750 50  0001 C CNN
+F 1 "GND" H 8405 5827 50  0000 C CNN
+F 2 "" H 8400 6000 50  0001 C CNN
+F 3 "" H 8400 6000 50  0001 C CNN
+	1    8400 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 60F58FB7
+P 3950 5150
+F 0 "C4" V 4150 5200 50  0000 R CNN
+F 1 "10uF" V 4050 5250 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3950 5150 50  0001 C CNN
+F 3 "~" H 3950 5150 50  0001 C CNN
+F 4 "" H 3950 5150 50  0001 C CNN "LCSC part number"
+	1    3950 5150
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4400 4950 3950 4950
+Wire Wire Line
+	3950 4950 3950 5050
+$Comp
+L power:GND #PWR019
+U 1 1 60F5AF49
+P 3950 5250
+F 0 "#PWR019" H 3950 5000 50  0001 C CNN
+F 1 "GND" H 3955 5077 50  0000 C CNN
+F 2 "" H 3950 5250 50  0001 C CNN
+F 3 "" H 3950 5250 50  0001 C CNN
+	1    3950 5250
+	1    0    0    -1  
+$EndComp
+Text HLabel 8550 4950 2    50   Output ~ 0
+5V
+Text HLabel 2750 4950 0    50   Input ~ 0
+VIN
+Text Label 8075 4950 0    50   ~ 0
+5V
+NoConn ~ 4400 5350
+$Comp
+L Device:C_Small C3
+U 1 1 6103DFFC
+P 3550 5150
+F 0 "C3" V 3750 5200 50  0000 R CNN
+F 1 "22uF" V 3650 5250 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 3550 5150 50  0001 C CNN
+F 3 "~" H 3550 5150 50  0001 C CNN
+F 4 "" H 3550 5150 50  0001 C CNN "LCSC part number"
+	1    3550 5150
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 6103E6B7
+P 3100 5150
+F 0 "C2" V 3300 5200 50  0000 R CNN
+F 1 "22uF" V 3200 5250 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 3100 5150 50  0001 C CNN
+F 3 "~" H 3100 5150 50  0001 C CNN
+F 4 "" H 3100 5150 50  0001 C CNN "LCSC part number"
+	1    3100 5150
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3950 4950 3550 4950
+Wire Wire Line
+	3550 4950 3550 5050
+Connection ~ 3950 4950
+Wire Wire Line
+	3550 4950 3100 4950
+Wire Wire Line
+	3100 4950 3100 5050
+Connection ~ 3550 4950
+$Comp
+L power:GND #PWR018
+U 1 1 6103F991
+P 3550 5250
+F 0 "#PWR018" H 3550 5000 50  0001 C CNN
+F 1 "GND" H 3555 5077 50  0000 C CNN
+F 2 "" H 3550 5250 50  0001 C CNN
+F 3 "" H 3550 5250 50  0001 C CNN
+	1    3550 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR017
+U 1 1 6103FF1C
+P 3100 5250
+F 0 "#PWR017" H 3100 5000 50  0001 C CNN
+F 1 "GND" H 3105 5077 50  0000 C CNN
+F 2 "" H 3100 5250 50  0001 C CNN
+F 3 "" H 3100 5250 50  0001 C CNN
+	1    3100 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 4950 2750 4950
+Connection ~ 3100 4950
+$Comp
+L Device:C_Small C6
+U 1 1 61041D98
+P 7200 5050
+F 0 "C6" V 7400 5100 50  0000 R CNN
+F 1 "100uF" V 7300 5200 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder" H 7200 5050 50  0001 C CNN
+F 3 "~" H 7200 5050 50  0001 C CNN
+F 4 "" H 7200 5050 50  0001 C CNN "LCSC part number"
+	1    7200 5050
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C7
+U 1 1 610420B9
+P 7550 5050
+F 0 "C7" V 7750 5100 50  0000 R CNN
+F 1 "100uF" V 7650 5200 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder" H 7550 5050 50  0001 C CNN
+F 3 "~" H 7550 5050 50  0001 C CNN
+F 4 "" H 7550 5050 50  0001 C CNN "LCSC part number"
+	1    7550 5050
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR023
+U 1 1 610429FA
+P 7550 5150
+F 0 "#PWR023" H 7550 4900 50  0001 C CNN
+F 1 "GND" H 7555 4977 50  0000 C CNN
+F 2 "" H 7550 5150 50  0001 C CNN
+F 3 "" H 7550 5150 50  0001 C CNN
+	1    7550 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 5550 8400 5700
+Wire Wire Line
+	5400 5550 8400 5550
+Wire Wire Line
+	8400 5550 8400 5400
+Connection ~ 8400 5550
+Wire Wire Line
+	8400 5100 8400 4950
+Connection ~ 8400 4950
+Wire Wire Line
+	8400 4950 8550 4950
+Connection ~ 7200 4950
+Connection ~ 7550 4950
+Wire Wire Line
+	7200 4950 7550 4950
+Wire Wire Line
+	7550 4950 7900 4950
+$Comp
+L Device:C_Small C8
+U 1 1 61046D36
+P 7900 5050
+F 0 "C8" V 8100 5100 50  0000 R CNN
+F 1 "22uF" V 8000 5150 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 7900 5050 50  0001 C CNN
+F 3 "~" H 7900 5050 50  0001 C CNN
+F 4 "" H 7900 5050 50  0001 C CNN "LCSC part number"
+	1    7900 5050
+	1    0    0    1   
+$EndComp
+Connection ~ 7900 4950
+Wire Wire Line
+	7900 4950 8400 4950
+$Comp
+L power:GND #PWR024
+U 1 1 61047EFC
+P 7900 5150
+F 0 "#PWR024" H 7900 4900 50  0001 C CNN
+F 1 "GND" H 7905 4977 50  0000 C CNN
+F 2 "" H 7900 5150 50  0001 C CNN
+F 3 "" H 7900 5150 50  0001 C CNN
+	1    7900 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 4950 7200 4950
+$EndSCHEMATC

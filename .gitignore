@@ -14,6 +14,9 @@ _autosave-*
 *-save.kicad_pcb
 fp-info-cache
 
+#KiCad Backups
+board/22-ELC-1-01-R1 (TSCU)/20-ELC-1-01-R1-backups/
+
 # Netlist files (exported from Eeschema)
 *.net
 

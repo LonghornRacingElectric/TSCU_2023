@@ -458,6 +458,10 @@
     [
       "00000000-0000-0000-0000-000060f65a9c",
       "Voltage Measurement"
+    ],
+    [
+      "28d99f6e-a836-4db6-bc71-c35494bde910",
+      "Indicator LEDs"
     ]
   ],
   "text_variables": {}

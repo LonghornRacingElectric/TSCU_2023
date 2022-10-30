@@ -1191,7 +1191,7 @@
     (uuid f56d244f-1fa4-4475-ac1d-f41eed31a48b)
   )
 
-  (text "TODO:\nTest all of this" (at 146.05 110.49 0)
+  (text "TODO:\nTest all of this" (at 109.22 110.49 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 22962957-1efd-404d-83db-5b233b6c15b0)
   )
@@ -1243,7 +1243,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid b854a395-bfc6-4140-9640-75d4f9296771)
   )
-  (text "TODO:\nImplement on-chip pull-up resistors\n" (at 139.7 120.65 0)
+  (text "TODO:\nImplement on-chip pull-up resistors\n" (at 109.22 120.65 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid cd1cff81-9d8a-4511-96d6-4ddb79484001)
   )
@@ -1327,6 +1327,10 @@
   (label "12V_in" (at 35.56 22.86 180)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 2165c9a4-eb84-4cb6-a870-2fdc39d2511b)
+  )
+  (label "D_AMS_Fault_Latched" (at 153.67 104.14 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid 21ff7d77-d88c-4cbe-8338-98f4795a2eba)
   )
   (label "dcdc_enable" (at 104.14 55.88 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -1563,6 +1567,10 @@
   (label "IMD_KE" (at 29.21 116.84 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid d0cd3439-276c-41ba-b38d-f84f6da38415)
+  )
+  (label "D_IMD_Fault_Latched" (at 153.67 107.95 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid d7130b9f-124b-4e69-8534-041970accd67)
   )
   (label "D_Final_Close_Out" (at 194.31 82.55 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -2434,6 +2442,26 @@
     )
   )
 
+  (sheet (at 153.67 97.79) (size 40.64 17.78) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 28d99f6e-a836-4db6-bc71-c35494bde910)
+    (property "Sheet name" "Indicator LEDs" (id 0) (at 153.67 97.0784 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "indicator_leds.kicad_sch" (id 1) (at 153.67 116.1546 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (pin "BMS_Fault_LED_In" input (at 153.67 104.14 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 36b8edf8-6ee2-4836-b97c-3b2e4c8d7aab)
+    )
+    (pin "IMS_Fault_LED_In" input (at 153.67 107.95 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 1d8ebbcb-d0c2-4179-af82-41545d0b4040)
+    )
+  )
+
   (sheet_instances
     (path "/" (page "1"))
     (path "/00000000-0000-0000-0000-0000617aed82" (page "2"))
@@ -2447,6 +2475,7 @@
     (path "/00000000-0000-0000-0000-000060f7075b" (page "10"))
     (path "/00000000-0000-0000-0000-00005d90d733" (page "11"))
     (path "/00000000-0000-0000-0000-000060f65a9c" (page "12"))
+    (path "/28d99f6e-a836-4db6-bc71-c35494bde910" (page "13"))
   )
 
   (symbol_instances
@@ -2747,6 +2776,21 @@
     (path "/00000000-0000-0000-0000-00005d90d733/00000000-0000-0000-0000-000060fda92b"
       (reference "#PWR0106") (unit 1) (value "+5V") (footprint "")
     )
+    (path "/28d99f6e-a836-4db6-bc71-c35494bde910/24de73d2-9209-4edd-bd8a-39acaaf3a98b"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/28d99f6e-a836-4db6-bc71-c35494bde910/272d79de-c897-47ec-8cee-bdc709f98f7e"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/28d99f6e-a836-4db6-bc71-c35494bde910/90973fb4-d197-4463-9118-c7a94f62c78f"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-0000617aed82/e9347cbc-281d-4d89-87e3-40eb1e5413f4"
+      (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/28d99f6e-a836-4db6-bc71-c35494bde910/f395fc8e-933f-4544-83d1-7f8405023da7"
+      (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-000060ed073e"
       (reference "A1") (unit 1) (value "Arduino_Nano_v3.x") (footprint "Module:Arduino_Nano")
     )
@@ -2869,6 +2913,15 @@
     )
     (path "/00000000-0000-0000-0000-0000617aed82/00000000-0000-0000-0000-00006180e213"
       (reference "D10") (unit 1) (value "B5819W") (footprint "Diode_SMD:D_SOD-123")
+    )
+    (path "/00000000-0000-0000-0000-0000617aed82/3efac1eb-81f2-40fb-ac97-158176863b6e"
+      (reference "D?") (unit 1) (value "BMS_STATUS") (footprint "")
+    )
+    (path "/28d99f6e-a836-4db6-bc71-c35494bde910/5e5dc036-0bed-43f1-a5de-67433ad83c36"
+      (reference "D?") (unit 1) (value "BMS_FAULT_LED") (footprint "")
+    )
+    (path "/28d99f6e-a836-4db6-bc71-c35494bde910/dc6f94e1-4680-4b48-ace0-d6d0f492507b"
+      (reference "D?") (unit 1) (value "IMS_FAULT_LED") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00005d90d7d4/00000000-0000-0000-0000-00006038728c"
       (reference "F2") (unit 1) (value "2A") (footprint "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder")
@@ -3110,6 +3163,15 @@
     (path "/00000000-0000-0000-0000-000060f77f4b/00000000-0000-0000-0000-000060fb03f4"
       (reference "R51") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
     )
+    (path "/28d99f6e-a836-4db6-bc71-c35494bde910/adac11e5-2860-40e4-bce4-e19a3e8a583d"
+      (reference "R?") (unit 1) (value "220") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-0000617aed82/b2b589bf-c37f-42c7-8186-328578765787"
+      (reference "R?") (unit 1) (value "220") (footprint "")
+    )
+    (path "/28d99f6e-a836-4db6-bc71-c35494bde910/eedced55-176a-45b3-a3da-bff1a25d967f"
+      (reference "R?") (unit 1) (value "220") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-000060f320ba/00000000-0000-0000-0000-0000600d193f"
       (reference "RV1") (unit 1) (value "R_POT_TRIM") (footprint "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical")
     )
@@ -3170,6 +3232,9 @@
     (path "/00000000-0000-0000-0000-000060f320ba/4ee17c78-6aaa-48ed-889c-6a61c6dc2c88"
       (reference "TP18") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm")
     )
+    (path "/00000000-0000-0000-0000-00005d90d733/ebf6a852-e42b-44f6-a1de-740340178ead"
+      (reference "TP?") (unit 1) (value "TestPoint") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-00005d9ae4f9/00000000-0000-0000-0000-000060f3ae0d"
       (reference "U1") (unit 1) (value "TPS5430DDA") (footprint "Package_SO:TI_SO-PowerPAD-8_ThermalVias")
     )
@@ -3223,6 +3288,18 @@
     )
     (path "/00000000-0000-0000-0000-000060f65a9c/00000000-0000-0000-0000-000060097583"
       (reference "U14") (unit 3) (value "LM358") (footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
+    )
+    (path "/28d99f6e-a836-4db6-bc71-c35494bde910/99db8223-dc3d-4d3f-8640-b6a4b37188a4"
+      (reference "U?") (unit 1) (value "LM358") (footprint "")
+    )
+    (path "/28d99f6e-a836-4db6-bc71-c35494bde910/e0bcac9d-dab7-4abe-89f1-620c9ec5fd7a"
+      (reference "U?") (unit 1) (value "LM358") (footprint "")
+    )
+    (path "/28d99f6e-a836-4db6-bc71-c35494bde910/13ca8184-2714-4986-b99a-1f20e984bbea"
+      (reference "U?") (unit 2) (value "LM358") (footprint "")
+    )
+    (path "/28d99f6e-a836-4db6-bc71-c35494bde910/6a060a57-d1e4-464a-b390-6294ef420732"
+      (reference "U?") (unit 3) (value "LM358") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000060f545d6/00000000-0000-0000-0000-000060f58487"
       (reference "X1") (unit 1) (value "placeholder_for_picture") (footprint "LHRE Footprint Library:noidontwantthat")

@@ -319,7 +319,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
       "unannotated": "error",
@@ -462,6 +462,10 @@
     [
       "28d99f6e-a836-4db6-bc71-c35494bde910",
       "Indicator LEDs"
+    ],
+    [
+      "afb75975-7b69-4eea-b031-9393b5cfe2b4",
+      "Untitled Sheet"
     ]
   ],
   "text_variables": {}

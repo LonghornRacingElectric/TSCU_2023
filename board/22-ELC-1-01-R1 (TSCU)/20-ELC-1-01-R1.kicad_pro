@@ -462,6 +462,10 @@
     [
       "28d99f6e-a836-4db6-bc71-c35494bde910",
       "Indicator LEDs"
+    ],
+    [
+      "12e69d5c-7824-42e9-a200-83677d65a59a",
+      "Microcontroller"
     ]
   ],
   "text_variables": {}

@@ -60,7 +60,6 @@
   )
 
 
-
   (polyline (pts (xy 165.1 127) (xy 194.31 127))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 1b98de85-f9de-4825-baf2-c96991615275)
@@ -190,7 +189,7 @@
     (uuid 00000000-0000-0000-0000-000060f58487)
     (property "Reference" "X1" (id 0) (at 180.34 103.759 0))
     (property "Value" "placeholder_for_picture" (id 1) (at 180.34 106.0704 0))
-    (property "Footprint" "LHRE Footprint Library:noidontwantthat" (id 2) (at 179.07 99.06 0)
+    (property "Footprint" "LHRE Footprint Library:g_noidontwantthat" (id 2) (at 179.07 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 179.07 99.06 0)
@@ -203,7 +202,7 @@
     (uuid 00000000-0000-0000-0000-000060f5848d)
     (property "Reference" "X2" (id 0) (at 180.34 115.189 0))
     (property "Value" "placeholder_for_picture" (id 1) (at 180.34 117.5004 0))
-    (property "Footprint" "LHRE Footprint Library:NewLogo2019" (id 2) (at 179.07 110.49 0)
+    (property "Footprint" "LHRE Footprint Library:logo_lhr" (id 2) (at 179.07 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 179.07 110.49 0)

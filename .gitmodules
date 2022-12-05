@@ -4,3 +4,6 @@
 [submodule "lhre_kicad"]
 	path = lhre_kicad
 	url = https://github.com/LonghornRacingElectric/lhre_kicad.git
+[submodule "kicad-tag-connect"]
+	path = kicad-tag-connect
+	url = https://github.com/nawotech/kicad-tag-connect.git

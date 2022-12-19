@@ -7,3 +7,6 @@
 [submodule "kicad-tag-connect"]
 	path = kicad-tag-connect
 	url = https://github.com/nawotech/kicad-tag-connect.git
+[submodule "kicad_pcb"]
+	path = kicad_pcb
+	url = https://github.com/l4es/kicad_pcb.git

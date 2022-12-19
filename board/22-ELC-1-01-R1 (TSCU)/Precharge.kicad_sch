@@ -459,7 +459,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x02") (at 143.51 120.65 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006059e1c7)
-    (property "Reference" "J10" (id 0) (at 141.478 119.5832 0)
+    (property "Reference" "J11" (id 0) (at 141.478 119.5832 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_01x01" (id 1) (at 141.478 121.8946 0)
